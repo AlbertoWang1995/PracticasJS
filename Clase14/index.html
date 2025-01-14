@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 13</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Clase 14</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-        <input type="text" name="" id="name" placeholder="Nombre">
-        <input type="email" name="" id="mail" placeholder="Correo Electronico">
-        <input type="password" name="" id="pass" placeholder="Contraseña"> 
-
-        <input type="button" name="" id="send-form" value="Enviar">
+    <form method="post" class="form-search">
+        <input type="text" placeholder="Buscar tarea por nombre..." id="searchbar" class="input">
+        <input type="submit" value="Buscar" id="button-search" class="button">
     </form>
 
-    <script src="script.js"></script>
+    <div class="list-task">
+        <!-- <div class="task">
+            <h4>Nombre de la tarea</h4>
+            <p><i></i></p>
+        </div> -->
+    </div>
+
+    <form method="post" class="form-create">
+        <input type="text" placeholder="Crear tarea..." id="createbar" class="input">
+        <input type="submit" value="Crear tarea" id="create-task" class="button">
+    </form>
+
+    
+    <!-- <script src="function.js"></script> -->
+    <script src="actividad.js"></script>
 </body>
 </html>
